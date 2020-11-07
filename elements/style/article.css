@@ -1,5 +1,7 @@
-section {
-	display: none;
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 
@@ -7,11 +9,7 @@ section {
 .search_container {
 	display: flex;
 	justify-content: center;
-	padding: 20px;
-}
-
-.search_spacing {
-	width: 90%;
+	width: 100%;
 }
 
 input {
@@ -20,27 +18,22 @@ input {
 	padding: 11px;
 	border-radius: 5px;
 	border: 4px solid #808080;
-	width: 90%;
-	float: right;
+	width: 70%;
 }
 
-input:focus {
+input:focus, input:focus:hover {
 	border-radius: 5px;
 	border: 4px solid #ffaf1f;
-}
-
-input:focus:hover {
-	border-radius: 5px;
 }
 
 ::placeholder {
 	color: #808080;
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+@media (max-width: 800px) {
+	input {
+		width: 90%;
+	}
 }
 
 
@@ -104,6 +97,7 @@ article img {
 }
 
 
+
 /* Big Image */
 #bigImg {
 	z-index: 3;
@@ -123,7 +117,7 @@ article img {
 	top: 0;
 	position: fixed;
 	cursor: pointer;
-	font-size: 100px;
+	font-size: 80px;
 	margin-right: 20px;
 	color: white;
 }
@@ -149,4 +143,100 @@ article img {
 	.bigImg_container {
 		width: 90vw;
 	}
+}
+
+@media (max-width: 400px) {
+	article {
+		margin: 20px 0px;
+	}
+}
+
+
+
+/* Filter */
+aside {
+	float: left;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+}
+
+/* Button */
+#filter_button {
+	display: none;
+}
+
+.filter_button {
+	writing-mode: tb-rl;
+	transform: rotate(-180deg);
+	padding: 30px 10px;
+	background: #F2F2F2;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: sticky;
+	top: 200px;
+}
+
+.filter_button:hover {
+	background: #FFCC00;
+}
+
+#filter_button:checked ~ .filter_list {
+	left: 0;
+}
+
+#filter_button:checked ~ .filter_button {
+	margin-left: 400px;
+	transition: margin-left 0.35s ease-in-out 0.2s;
+}
+
+
+/* List */
+.filter_list {
+	position: fixed;
+	width: 300px;
+	height: 100vh;
+	background: #2e2d2b;
+	top: 0;
+	left: -100%;
+	transition: all 0.5s ease-in-out;
+	padding: 100px 50px;
+	color: white;
+}
+
+.filter_list p {
+	margin-left: 25px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-top: 20px; 
+}
+.filter_list label {
+	padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+.filter_item[type="checkbox"] {
+  display: none;
+}
+
+.filter_item[type="checkbox"] + label::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  border: 2px solid #FFAF1F;
+  background-color: transparent;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 5px;
+}
+
+.filter_item[type="checkbox"]:checked + label::before {
+  box-shadow: inset 0px 0px 0px 2.5px #2e2d2b;
+  background-color: #FFAF1F;
 }

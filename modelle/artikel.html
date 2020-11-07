@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../elements/style/style.css"/>
 <link rel="stylesheet" type="text/css" href="../elements/style/nav.css"/>
-<link rel="stylesheet" type="text/css" href="../elements/style/modelle.css"/>
+<link rel="stylesheet" type="text/css" href="../elements/style/article.css"/>
 <link rel="icon" href="../elements/pictures/favicon.png">
 </head>
 
@@ -29,30 +29,54 @@
 	</ul>
 </nav>
 
-<div class="search_container">
-	<div class="search_spacing">
-		<input type="text" placeholder="Suchen">
+
+
+
+
+<!--Filter-->
+<aside>
+	<input type="checkbox" id="filter_button">
+	<label for="filter_button" class="filter_button">Filter</label>
+	<div class="filter_list">
+		<h1>Filter</h1>
+		<p>Spurweite</p>
+		<input type="checkbox" id="h0m" class="filter_item">
+		<label for="h0m">H0m</label><br>
+		<input type="checkbox" id="0m" class="filter_item">
+		<label for="0m">0m</label><br>
+		<input type="checkbox" id="h0" class="filter_item">
+		<label for="h0">H0</label><br>
+
+		<p>Fahrzeuge</p>
+		<input type="checkbox" id="lokomotiven" class="filter_item">
+		<label for="lokomotiven">Lokomotiven</label><br>
+		<input type="checkbox" id="personenwagen" class="filter_item">
+		<label for="personenwagen">Personenwagen</label><br>
+		<input type="checkbox" id="gueterwagen" class="filter_item">
+		<label for="gueterwagen">Güterwagen</label><br>
+		<input type="checkbox" id="dienstwagen" class="filter_item">
+		<label for="dienstwagen">Dienstwagen</label><br>
+
+		<p>Bahn</p>
+		<input type="checkbox" id="rhb" class="filter_item">
+		<label for="rhb">RhB</label><br>
+		<input type="checkbox" id="mgb" class="filter_item">
+		<label for="mgb">MGB</label><br>
+		<input type="checkbox" id="fo" class="filter_item">
+		<label for="fo">FO</label><br>
+		<input type="checkbox" id="bvz" class="filter_item">
+		<label for="bvz">BVZ</label><br>
 	</div>
-</div>
+</aside>
+
 
 <!--Content-->
 <main>
-	
-	<section>
+	<div class="search_container">
 
-			<a class="button disable_link" href="#alle">Alle</a>
-			<a class="button disable_link" href="#prmodellbau">PR-Modellbau</a>
-			<a class="button disable_link" href="#bemo_h0">Bemo H0</a>
-			<a class="button disable_link" href="#bemo_0m">Bemo 0m</a>
-			<a class="button disable_link" href="#df-b">DF/B</a>
-			<a class="button disable_link" href="#kato">Kato</a>
-			<a class="button disable_link" href="#peco">PECO</a>
-			<a class="button disable_link" href="#dr">D + R</a>
-			<a class="button disable_link" href="#fulgurex">Fulgurex</a>
-			<a class="button disable_link" href="#brawa">Brawa</a>
-			<a class="button disable_link" href="#acme_h0">ACME H0</a>
+			<input type="text" placeholder="Suchen">
 
-	</section>
+	</div>
 
 	<div class="content">
 		<article>
@@ -87,12 +111,9 @@
 			<p class="price">CHF 165.00</p>
 		</article>
 		
+
+
 	</div>
-	
-
-
-	
-
 </main>
 
 <div id="bigImg" onclick="this.style.display='none'">

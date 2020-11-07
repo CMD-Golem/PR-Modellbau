@@ -1,0 +1,30 @@
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.content_link {
+	padding: 2%;
+	flex-basis: 290px;
+}
+
+
+.container {
+	position: relative;
+}
+
+.content img {
+	width: 100%;
+	height: auto;
+	filter: contrast(0%);
+	transition: 1.5s;
+}
+
+.container:hover img, .content_link:focus img {
+	filter: contrast(100%);
+}
+
+.title {
+	display: none;
+}
