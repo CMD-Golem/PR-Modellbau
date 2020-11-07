@@ -1,0 +1,152 @@
+section {
+	display: none;
+}
+
+
+/* Search */
+.search_container {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.search_spacing {
+	width: 90%;
+}
+
+input {
+	background-color: transparent;
+	font-size: 18px;
+	padding: 11px;
+	border-radius: 5px;
+	border: 4px solid #808080;
+	width: 90%;
+	float: right;
+}
+
+input:focus {
+	border-radius: 5px;
+	border: 4px solid #ffaf1f;
+}
+
+input:focus:hover {
+	border-radius: 5px;
+}
+
+::placeholder {
+	color: #808080;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+
+/* Items */
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+article  {
+	width: 300px;
+	padding: 20px;
+	background: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	position: relative;
+	margin: 20px;
+}
+
+article img {
+	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.producer {
+	padding: 8px 15px;
+	background: #FFCC00;
+	position: absolute;
+	top: 152px;
+	left: 50%;
+    transform: translate(-50%, 0);
+	text-align: center;
+	font-weight: bold;
+	border-radius: 500px;
+
+}
+
+.price {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.art_nr {
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.art_nr span {
+	user-select: all;
+}
+
+
+/* Big Image */
+#bigImg {
+	z-index: 3;
+	display: none;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.7)
+}
+
+.bigImg_close {
+	right: 0;
+	top: 0;
+	position: fixed;
+	cursor: pointer;
+	font-size: 100px;
+	margin-right: 20px;
+	color: white;
+}
+
+.bigImg_close:hover {
+	color: red;
+}
+
+.bigImg_container {
+	margin: auto;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	width: 40vw;
+}
+
+@media (max-width: 1500px) {
+	.bigImg_container {
+		width: 60vw;
+	}
+}
+@media (max-width: 800px) {
+	.bigImg_container {
+		width: 90vw;
+	}
+}
