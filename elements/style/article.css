@@ -220,11 +220,11 @@ aside {
 
 
 
-.filter_item[type="checkbox"] {
+.filter_list input[type="checkbox"] {
   display: none;
 }
 
-.filter_item[type="checkbox"] + label::before {
+.filter_list input[type="checkbox"] + label::before {
   width: 15px;
   height: 15px;
   border-radius: 5px;
@@ -236,7 +236,7 @@ aside {
   margin-right: 5px;
 }
 
-.filter_item[type="checkbox"]:checked + label::before {
+.filter_list input[type="checkbox"]:checked + label::before {
   box-shadow: inset 0px 0px 0px 2.5px #2e2d2b;
   background-color: #FFAF1F;
 }
