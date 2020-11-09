@@ -11,7 +11,7 @@ var getFilter = function(category) {
 
 $("#filters :checkbox").click(function() {
   var all = $("article");
-  var tgts = all.filter(getFilter("spurweite")).filter(getFilter("fahrzeuge")).filter(getFilter("bahn"));
+  var tgts = all.filter(getFilter("scale")).filter(getFilter("vehicle")).filter(getFilter("holder")).filter(getFilter("producer"));
   all.not(tgts).hide();
   tgts.show();
 });

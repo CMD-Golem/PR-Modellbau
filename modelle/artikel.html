@@ -2,7 +2,7 @@
 <html lang="de">
 	
 <head>
-<title>Rollmaterial RhB</title>
+<title>PR-Modellbau - Modelle</title>
 <meta name="description" content="PR-Modellbau, das Fachgeschäft mit den exklusiven Modellen aus eigener Produktion, welche auf Ihrer Anlage noch fehlen.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
@@ -41,21 +41,31 @@
 	<div class="filter_list" id="filters">
 		<h1>Filter</h1>
 		<p>Spurweite</p>
-		<input type="checkbox" id="h0m" class="spurweite"><label for="h0m">H0m</label><br>
-		<input type="checkbox" id="0m" class="spurweite"><label for="0m">0m</label><br>
-		<input type="checkbox" id="h0" class="spurweite"><label for="h0">H0</label><br>
+		<input type="checkbox" id="h0m" class="scale"><label for="h0m">H0m</label><br>
+		<input type="checkbox" id="0m" class="scale"><label for="0m">0m</label><br>
+		<input type="checkbox" id="h0" class="scale"><label for="h0">H0</label><br>
 
 		<p>Fahrzeuge</p>
-		<input type="checkbox" id="lokomotiven" class="fahrzeuge"><label for="lokomotiven">Lokomotiven</label><br>
-		<input type="checkbox" id="personenwagen" class="fahrzeuge"><label for="personenwagen">Personenwagen</label><br>
-		<input type="checkbox" id="gueterwagen" class="fahrzeuge"><label for="gueterwagen">Güterwagen</label><br>
-		<input type="checkbox" id="dienstwagen" class="fahrzeuge"><label for="dienstwagen">Dienstwagen</label><br>
+		<input type="checkbox" id="lokomotiven" class="vehicle"><label for="lokomotiven">Lokomotiven</label><br>
+		<input type="checkbox" id="personenwagen" class="vehicle"><label for="personenwagen">Personenwagen</label><br>
+		<input type="checkbox" id="gueterwagen" class="vehicle"><label for="gueterwagen">Güterwagen</label><br>
+		<input type="checkbox" id="dienstwagen" class="vehicle"><label for="dienstwagen">Dienstwagen</label><br>
 
 		<p>Bahn</p>
-		<input type="checkbox" id="rhb" class="bahn"><label for="rhb">RhB</label><br>
-		<input type="checkbox" id="mgb" class="bahn"><label for="mgb">MGB</label><br>
-		<input type="checkbox" id="fo" class="bahn"><label for="fo">FO</label><br>
-		<input type="checkbox" id="bvz" class="bahn"><label for="bvz">BVZ</label><br>
+		<input type="checkbox" id="rhb" class="holder"><label for="rhb">RhB</label><br>
+		<input type="checkbox" id="mgb" class="holder"><label for="mgb">MGB</label><br>
+		<input type="checkbox" id="fo" class="holder"><label for="fo">FO</label><br>
+		<input type="checkbox" id="bvz" class="holder"><label for="bvz">BVZ</label><br>
+
+		<p>Hersteller</p>
+		<input type="checkbox" id="prmodellbau" class="producer"><label for="prmodellbau">PR-Modellbau</label><br>
+		<input type="checkbox" id="acme" class="producer"><label for="acme">ACME</label><br>
+		<input type="checkbox" id="bemo" class="producer"><label for="bemo">Bemo</label><br>
+		<input type="checkbox" id="d-r" class="producer"><label for="d-r">D+R</label><br>
+		<input type="checkbox" id="df-b" class="producer"><label for="df-b">DF/B</label><br>
+		<input type="checkbox" id="fulgurex" class="producer"><label for="fulgurex">Fulgurex</label><br>
+		<input type="checkbox" id="kato" class="producer"><label for="kato">Kato</label><br>
+		<input type="checkbox" id="peco" class="producer"><label for="peco">Peco</label><br>
 	</div>
 </aside>
 
@@ -63,47 +73,11 @@
 <!--Content-->
 <main>
 	<div class="search_container">
-
-			<input type="text" placeholder="Suchen">
-
+		<input type="text" placeholder="Suchen">
 	</div>
 
-	<div class="content">
-		<article data-filter="h0m lokomotiven rhb">
-			<img src="http://www.prmodellbau.ch/pictures/Za8130.jpg" onclick="onClick(this)">
-			<p class="producer">PR-Modellbau</p>
-			<p class="description">	H0m Lokomotiven RhB</p>
-			<p class="art_nr">Artikel Nr.: <span>PR-113 8130</span></p>
-			<p class="price">CHF 165.00</p>
-		</article>
+	<div class="content" id="article-list"></div>
 
-		<article data-filter="h0 dienstwagen mgb">
-			<img src="http://www.prmodellbau.ch/pictures/Za8130.jpg" onclick="onClick(this)">
-			<p class="producer">PR-Modellbau</p>
-			<p class="description">	H0 dienstwagen MGB</p>
-			<p class="art_nr">Artikel Nr.: <span>PR-113 8130</span></p>
-			<p class="price">CHF 165.00</p>
-		</article>
-
-		<article data-filter="h0m personenwagen fo">
-			<img src="http://www.prmodellbau.ch/pictures/Za8130.jpg" onclick="onClick(this)">
-			<p class="producer">PR-Modellbau</p>
-			<p class="description">	H0m Personenwagen fo</p>
-			<p class="art_nr">Artikel Nr.: <span>PR-113 8130</span></p>
-			<p class="price">CHF 165.00</p>
-		</article>
-		
-		<article data-filter="0m gueterwagen bvz">
-			<img src="http://www.prmodellbau.ch/pictures/Za8130.jpg" onclick="onClick(this)">
-			<p class="producer">PR-Modellbau</p>
-			<p class="description">	0m Güterwagen BVZ</p>
-			<p class="art_nr">Artikel Nr.: <span>PR-113 8130</span></p>
-			<p class="price">CHF 165.00</p>
-		</article>
-		
-
-
-	</div>
 </main>
 
 <div id="bigImg" onclick="this.style.display='none'">
@@ -116,6 +90,7 @@
 <!--Scripts-->
 <script language="javascript" type="text/javascript" src="../elements/javascript/big_img.js"></script>
 <script language="javascript" type="text/javascript" src="../elements/javascript/filter.js"></script>
+<script language="javascript" type="text/javascript" src="../elements/javascript/article.js"></script>
 
 <!--Footer-->
 <footer>

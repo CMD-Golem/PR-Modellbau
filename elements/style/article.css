@@ -1,10 +1,3 @@
-main {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-
 /* Search */
 .search_container {
 	display: flex;
@@ -18,7 +11,7 @@ input {
 	padding: 11px;
 	border-radius: 5px;
 	border: 4px solid #808080;
-	width: 70%;
+	width: 70vw;
 }
 
 input:focus, input:focus:hover {
@@ -32,7 +25,7 @@ input:focus, input:focus:hover {
 
 @media (max-width: 800px) {
 	input {
-		width: 90%;
+		width: 90vw;
 	}
 }
 
@@ -100,7 +93,7 @@ article img {
 
 /* Big Image */
 #bigImg {
-	z-index: 3;
+	z-index: 6;
 	display: none;
 	padding-top: 100px;
 	position: fixed;
@@ -161,6 +154,12 @@ aside {
 	height: 100%;
 }
 
+@media (max-width: 500px) {
+	aside {
+		display: none;
+	}
+}
+
 /* Button */
 #filter_button {
 	display: none;
@@ -213,12 +212,6 @@ aside {
 .filter_list label {
 	padding-bottom: 5px;
 }
-
-
-
-
-
-
 
 .filter_list input[type="checkbox"] {
   display: none;
