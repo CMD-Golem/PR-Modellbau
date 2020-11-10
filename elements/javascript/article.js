@@ -6,10 +6,12 @@ getjson.onreadystatechange = function() {
 
 		const html = data.map(item => `
 			<article data-filter="${item.keywords}">
-				<img src="${item.picture}" onclick="onClick(this)">
-				<p class="producer">${item.producer}</p>
-				<p class="description">	${item.description}</p>
-				<p class="art_nr">Artikel Nr.: <span>${item.art_nr}</span></p>
+				<div class="img_container">
+					<img src="${item.picture}" onclick="onClick(this)">
+				</div>
+				<p class="description">${item.description}</p>
+				<p class="info">${item.producer}, ${item.scale}</p>
+				<p class="info">Artikel Nr.: <span>${item.art_nr}</span></p>
 				<p class="price">CHF ${item.price}</p>
 			</article>
 

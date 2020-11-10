@@ -39,7 +39,7 @@ nav {
 }
 
 .nav_link:hover, .nav_active, .nav_link:focus {
-	background: #ffaf1f;
+	background: #FFCC00;
 	transition: 0.5s;
 }
 
