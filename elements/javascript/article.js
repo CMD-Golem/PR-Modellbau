@@ -5,7 +5,7 @@ getjson.onreadystatechange = function() {
 	    const article = document.getElementById('article-list');
 
 		const html = data.map(item => `
-			<article data-filter="${item.keywords}">
+			<article data-filter="${item.scale} ${item.keywords} ${item.producer}">
 				<div class="img_container">
 					<img src="${item.picture}" onclick="onClick(this)">
 				</div>
@@ -20,5 +20,5 @@ getjson.onreadystatechange = function() {
 		article.innerHTML = html;
 	}
 };
-getjson.open("GET", "https://raw.githubusercontent.com/CMD-Golem/cmd-golem.github.io/master/json/prmodellbau_search.json", true);
+getjson.open("GET", "https://raw.githubusercontent.com/CMD-Golem/prmodellbau/master/elements/modellbahn.json", true);
 getjson.send();
