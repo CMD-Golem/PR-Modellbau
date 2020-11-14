@@ -3,7 +3,7 @@
 
 var getFilter = function(category) {
   var filter = $("#filters ." + category + ":checked").map(function() {
-    return '[data-filter*="' + this.id + '"]';
+    return '[class*="' + this.id + '"]';
   }).get().join(",");
   filter = (filter.length > 0) ? filter : "*";
   return filter;

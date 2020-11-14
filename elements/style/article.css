@@ -76,6 +76,7 @@ article:hover {
 .description {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 70px;
 	margin-bottom: 10px;
 }
@@ -155,7 +156,7 @@ article:hover {
 /* Filter */
 aside {
 	float: left;
-	position: absolute;
+	position: fixed;
 	z-index: 5;
 	height: 100%;
 }
@@ -178,8 +179,7 @@ aside {
 	background: #F2F2F2;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	position: sticky;
-	top: 200px;
+	margin-top: 200px;
 }
 
 .filter_button:hover {

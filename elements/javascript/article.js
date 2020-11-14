@@ -5,7 +5,7 @@ getjson.onreadystatechange = function() {
 	    const article = document.getElementById('article-list');
 
 		const html = data.map(item => `
-			<article data-filter="${item.scale} ${item.keywords} ${item.producer}">
+			<article class="${item.scale} ${item.keywords} ${item.producer}">
 				<div class="img_container">
 					<img src="${item.picture}" onclick="onClick(this)">
 				</div>
