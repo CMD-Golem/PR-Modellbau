@@ -239,3 +239,12 @@ aside {
   box-shadow: inset 0px 0px 0px 2.5px #2e2d2b;
   background-color: #FFCC00;
 }
+
+/* Show / hide article*/
+.hide_filter {
+	display: none;
+}
+
+.hide_search {
+	display: none;
+}

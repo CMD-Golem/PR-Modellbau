@@ -27,8 +27,8 @@ nav {
 
 .nav_list li {
 	display: inline-block;
-	line-height: 200px;
 	margin: 0 5px;
+	margin-top: 90px;
 }
 
 .nav_link {

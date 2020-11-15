@@ -1,0 +1,65 @@
+header {
+	display: flex;
+	flex-direction: row;
+	width: 80vw;
+	justify-content: space-around;
+	margin-bottom: 40px;
+
+}
+
+.select_lang a {
+	margin: 10px;
+}
+
+p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+/* Spoiler*/
+.spoiler_box {
+	margin: 20px 0px;
+}
+
+.spoiler {
+	cursor: pointer;
+	background: #F2F2F2;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+.spoiler:hover {
+	background-color: #FFCC00;
+}
+
+.spoiler_content {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+.spoiler_content section {
+	margin-left: 10px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #808080;
+	padding-left: 10px;
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+	.spoiler:after {
+		content: "\002B";
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+		margin-right: 15px;
+	}
+
+	.spoiler.active:after {
+		content: "\2212";
+	}
+}
