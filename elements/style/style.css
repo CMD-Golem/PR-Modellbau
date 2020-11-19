@@ -65,6 +65,12 @@ a:focus {
 	color: #808080;
 }
 
+hr {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #F2F2F2;
+}
+
 
 
 .disable_link:link, .disable_link:visited, .disable_link:hover, .disable_link:active {
