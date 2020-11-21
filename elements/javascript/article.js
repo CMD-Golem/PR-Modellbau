@@ -63,30 +63,3 @@ $("#filters :checkbox").click(function() {
 	all.not(tgts).addClass("hide_filter");
 	tgts.removeClass("hide_filter");
 });
-
-
-
-//#################################################################################################
-// Big Images
-function onClick(element) {
-	document.getElementById("img").src = element.src;
-	document.getElementById("bigImg").style.display = "block";
-}
-
-
-
-//#################################################################################################
-// fix broken images //https://stackoverflow.com/a/980951
-window.onload = setTimeout(fixBrokenImages, 200);
-
-function fixBrokenImages(url) {
-		var img = document.getElementsByTagName('img');
-		var i=0, l=img.length;
-		for (;i<l;i++) {
-				var t = img[i];
-				if(t.naturalWidth === 0){
-						//this image is broken
-						t.src = "../elements/pictures/noimage.png";
-				}
-		}
-}
