@@ -1,16 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Anton');*/
-
-* {
-	padding: 0;
-	margin: 0;
-}
-
 html {
 	height: 100%;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Microgramma;
 	margin: 0;
 	min-height: 100%;
 	font-size: 20px;
@@ -22,13 +15,26 @@ body {
 /* Main */
 main {
 	padding: 50px 20px;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 1240px) {
+	main {
+		width: calc(100vw - 40px);
+	}
 }
 
 h1 {
 	color: #FFCC00;
 	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h4 {
+	color: #FFCC00;
+	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
 }
@@ -90,7 +96,7 @@ input:focus:hover, input:focus {
 footer {
 	background-color: #F2F2F2;
 	margin-top: auto;
-	height: 80px;
+	height: 100px;
 	padding-right: 15%;
 	padding-left: 15%;
 	padding-top: 15px;
@@ -103,25 +109,37 @@ footer {
 	align-items: stretch;
 }
 
+.footer_copyright {
+	text-align: right;
+	flex-grow: 1;
+}
+
 .footer_links {
 	font-size: 20px;
 	flex-grow: 1;
+	text-align: center;
+}
+
+.footer_address {
+	flex-grow: 1;
 	text-align: left;
 	display: flex;
+}
+
+.footer_address p {
+	text-align: center;
 }
 
 .footer_links a:not(:last-child) {
 	margin-right: 40px;
 }
 
-.footer_copyright {
-	text-align: right;
-	flex-grow: 1;
-}
-
 
 /**Transformation**/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
+	footer {
+		height: 160px;
+	}
 	.footer_text {
 		flex-direction: column;
 	}
@@ -132,7 +150,12 @@ footer {
 	.footer_copyright {
 		text-align: center;
 	}
+	.footer_address {
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+	}
 	main {
-		padding: 10px;
+		padding: 50px 10px;
 	}
 }

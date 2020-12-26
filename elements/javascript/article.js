@@ -8,7 +8,7 @@ getjson.onreadystatechange = function() {
 		const html = data.map(item => `
 			<article class="${item.keywords} ${item.producer} ${item.art_nr}">
 				<div class="img_container">
-					<img src="${item.picture}" onclick="onClick(this)">
+					<img src="${item.picture}" onclick="onClick(this)" onerror="this.onerror=null;this.src='https://prmodellbau.netlify.app/elements/pictures/noimage.png';" loading="lazy">
 				</div>
 				<p class="description">${item.description}</p>
 				<p class="info">${item.producer}, ${item.scale}</p>
