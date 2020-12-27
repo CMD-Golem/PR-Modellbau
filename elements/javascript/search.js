@@ -28,7 +28,7 @@ var getFilter = function(category) {
 
 $("#filters :checkbox").click(function() {
 	var all = $("article");
-	var tgts = all.filter(getFilter("scale")).filter(getFilter("vehicle")).filter(getFilter("holder")).filter(getFilter("producer"));
+	var tgts = all.filter(getFilter("filter01")).filter(getFilter("filter02")).filter(getFilter("filter03")).filter(getFilter("filter04")).filter(getFilter("filter05"));
 	all.not(tgts).addClass("hide_filter");
 	tgts.removeClass("hide_filter");
 });

@@ -9,6 +9,10 @@
 	flex-basis: 290px;
 }
 
+.content_link_small {
+	padding: 2%;
+}
+
 
 .container {
 	position: relative;
