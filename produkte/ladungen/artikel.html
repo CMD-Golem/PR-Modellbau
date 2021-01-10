@@ -65,25 +65,35 @@
 <!--Content-->
 <main>
 	<div class="search_container">
-		<input type="text" placeholder="Suchen" id="site_search" onkeyup="siteSearch()">
+		<div class="input_container">
+			<input type="text" placeholder="Suchen" id="site_search" onkeyup="siteSearch()">
+		</div>
+		
+		<img src="../../elements/pictures/menu/list_view.svg" title="List Ansicht" onClick="listView()">
+		<img src="../../elements/pictures/menu/picture_view.svg" title="Bilder Ansicht" onClick="pictureView()">
 	</div>
 
-	<div class="content" id="article-list"></div>
+	<div class="content list_view" id="article-list"></div>
+	<p id="not-found" style="display: none; text-align: center;">Keine Resultate</p>
 
 </main>
 
 
 <div id="bigImg" onclick="this.style.display='none'">
-  <span class="bigImg_close">&times;</span>
-  <div class="bigImg_container">
-    <img id="img" style="width:100%">
-  </div>
+	<span class="bigImg_close">&times;</span>
+	<div class="bigImg_container">
+		<img id="img" style="width:100%">
+	</div>
 </div>
 
+<button onclick="goTop()" id="scroll_top" title="Gehe zurück zum Seitenanfang" style="display: none;">➤</button>
+
 <!--Scripts-->
-<script language="javascript" type="text/javascript" src="../../elements/javascript/article/ladungen.js"></script>
+<script type="text/javascript">
+	var json_url = "https://raw.githubusercontent.com/CMD-Golem/prmodellbau/master/elements/json/ladungen.json"
+</script>
+<script language="javascript" type="text/javascript" src="../../elements/javascript/article.js"></script>
 <script language="javascript" type="text/javascript" src="../../elements/javascript/images.js"></script>
-<script language="javascript" type="text/javascript" src="../../elements/javascript/search.js"></script>
 
 <!--Footer-->
 <footer>
