@@ -8,7 +8,7 @@ getjson.onreadystatechange = function() {
 		const html = data.map(item => `
 			<article class="${item.keywords} ${item.producer} ${item.art_nr}" onclick="onClickList(this)">
 				<div class="img_container">
-					<img src="${item.picture}" onclick="onClick(this)" onerror="this.onerror=null;this.src='https://prmodellbau.netlify.app/elements/pictures/noimage.png';" loading="lazy">
+					<img src="${item.picture}" onclick="onClick(this)" onerror="this.onerror=null;this.src='https://prmodellbau.netlify.app/elements/pictures/noimage.png';">
 				</div>
 				<div class="description_container">
 					<p class="description" onclick="event.stopPropagation();">${item.description}</p>
@@ -114,12 +114,16 @@ function listView() {
 	document.getElementById('article-list').classList.remove("picture_view");
 	document.getElementById('article-list').classList.add("list_view");
 	localStorage.setItem("view", "listView");
+
+	document.getElementsByTagName("img").loading = eager;
 }
 
 function pictureView() {
 	document.getElementById('article-list').classList.remove("list_view");
 	document.getElementById('article-list').classList.add("picture_view");
 	localStorage.setItem("view", "pictureView");
+
+	document.getElementsByTagName("img").loading = lazy;
 }
 
 
