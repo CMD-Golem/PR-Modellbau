@@ -142,3 +142,26 @@ function goTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//#################################################################################################
+//Filter Button
+function filterList() {
+	var button = document.getElementById("filter_button");
+
+	if (button.classList.contains("filter_open") == false) {
+		button.classList.add("filter_open");
+
+		button.style.marginLeft = "400px";
+		document.getElementById("filters").style.left = "0";
+		document.getElementById("filter_close").style.display = "block";
+	}
+
+	else {
+		button.classList.remove("filter_open");
+
+		button.style.marginLeft = "0";
+		document.getElementById("filters").style.left = "-100%";
+		document.getElementById("filter_close").style.display = "none";
+	}
+	
+}

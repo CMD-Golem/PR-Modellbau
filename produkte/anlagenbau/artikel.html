@@ -36,8 +36,8 @@
 
 <!--Filter-->
 <aside>
-	<input type="checkbox" id="filter_button">
-	<label for="filter_button" class="filter_button">Filter</label>
+	<div id="filter_button" onclick="filterList()">Filter</div>
+	<div id="filter_close" onclick="filterList()"></div>
 	<div class="filter_list" id="filters">
 		<h1>Filter</h1>
 
@@ -46,6 +46,7 @@
 
 		<p>Baumaterial</p>
 		<input type="checkbox" id="Holzhaus" class="filter02"><label for="Holzhaus">Holz</label><br>
+		
 
 		<p>Dach</p>
 		<input type="checkbox" id="Steindach" class="filter03"><label for="Steindach">Stein</label><br>
