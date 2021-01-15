@@ -155,16 +155,14 @@ function filterList() {
 	if (button.classList.contains("filter_open") == false) {
 		button.classList.add("filter_open");
 
-		button.style.marginLeft = "400px";
-		document.getElementById("filters").style.left = "0";
+		document.getElementsByTagName("aside")[0].style.left = "0";
 		document.getElementById("filter_close").style.display = "block";
 	}
 
 	else {
 		button.classList.remove("filter_open");
 
-		button.style.marginLeft = "0";
-		document.getElementById("filters").style.left = "-100%";
+		document.getElementsByTagName("aside")[0].style.left = "-401px";
 		document.getElementById("filter_close").style.display = "none";
 	}
 	

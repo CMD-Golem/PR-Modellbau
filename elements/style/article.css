@@ -282,6 +282,9 @@ aside {
 	position: fixed;
 	z-index: 5;
 	height: 100%;
+	top: 0;
+	left: -401px;
+	transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 500px) {
@@ -301,6 +304,7 @@ aside {
 	margin-top: 200px;
 	user-select: none;
 	cursor: pointer;
+	margin-left: 400px;
 }
 
 #filter_button:hover {
@@ -328,10 +332,8 @@ aside {
 	position: fixed;
 	width: 300px;
 	height: 100vh;
-	background: #2e2d2b;
 	top: 0;
-	left: -100%;
-	transition: all 0.5s ease-in-out;
+	background: #2e2d2b;
 	padding: 0 50px;
 	color: white;
 	overflow: scroll;
