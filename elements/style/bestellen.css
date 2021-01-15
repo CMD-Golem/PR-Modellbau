@@ -47,9 +47,6 @@ p {
 	padding-left: 10px;
 }
 
-
-
-
 @media screen and (min-width: 500px) {
 	.spoiler:after {
 		content: "\002B";
@@ -62,4 +59,24 @@ p {
 	.spoiler.active:after {
 		content: "\2212";
 	}
+}
+
+
+/* Order Button */
+.order_box {
+	text-align: center;
+}
+
+.order {
+	font-size: 20px;
+	margin: 20px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	cursor: pointer;
+	background: #F2F2F2;
+}
+
+.order:hover {
+	background: #FFCC00;
+	transition: 0.5s;
 }

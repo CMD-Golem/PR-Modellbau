@@ -55,8 +55,6 @@ input:focus, input:focus:hover {
 	}
 }
 
-
-
 /* Items */
 .content {
 	display: flex;
@@ -89,6 +87,18 @@ article:hover {
 
 
 /* List View */
+.list_view_button {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	background: transparent url(../../elements/pictures/menu/list_view.svg) center/contain no-repeat;
+}
+
+.list_view_button:hover {
+	background: transparent url(../../elements/pictures/menu/list_view_hover.svg) center/contain no-repeat;
+}
+
+
 .list_view article {
 	width: calc(100% - 10px);
 	margin: 5px;
@@ -141,6 +151,17 @@ article:hover {
 
 
 /* Picture View */
+.picture_view_button {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	background: transparent url(../../elements/pictures/menu/picture_view.svg) center/contain no-repeat;
+}
+
+.picture_view_button:hover {
+	background: transparent url(../../elements/pictures/menu/picture_view_hover.svg) center/contain no-repeat;
+}
+
 .picture_view article  {
 	width: 300px;
 	padding: 20px;

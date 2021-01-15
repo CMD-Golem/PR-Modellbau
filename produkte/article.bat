@@ -1,0 +1,5 @@
+start "" "C:\Program Files (x86)\Sublime Text 3\sublime_text.exe" "C:\Users\Fabian\Documents\GitHub\prmodellbau\produkte\anlagenbau\artikel.html"
+start "" "C:\Program Files (x86)\Sublime Text 3\sublime_text.exe" "C:\Users\Fabian\Documents\GitHub\prmodellbau\produkte\ladungen\artikel.html"
+start "" "C:\Program Files (x86)\Sublime Text 3\sublime_text.exe" "C:\Users\Fabian\Documents\GitHub\prmodellbau\produkte\modellbahn\artikel.html"
+start "" "C:\Program Files (x86)\Sublime Text 3\sublime_text.exe" "C:\Users\Fabian\Documents\GitHub\prmodellbau\produkte\modellbau\artikel.html"
+start "" "C:\Program Files (x86)\Sublime Text 3\sublime_text.exe" "C:\Users\Fabian\Documents\GitHub\prmodellbau\produkte\strassenfahrzeuge\artikel.html"

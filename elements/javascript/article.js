@@ -115,7 +115,7 @@ function listView() {
 	document.getElementById('article-list').classList.add("list_view");
 	localStorage.setItem("view", "listView");
 
-	document.getElementsByTagName("img").loading = eager;
+	document.getElementsByTagName("img").loading = "eager";
 }
 
 function pictureView() {
@@ -123,7 +123,7 @@ function pictureView() {
 	document.getElementById('article-list').classList.add("picture_view");
 	localStorage.setItem("view", "pictureView");
 
-	document.getElementsByTagName("img").loading = lazy;
+	document.getElementsByTagName("img").loading = "lazy";
 }
 
 
