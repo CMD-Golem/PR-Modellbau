@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="elements/style/style.css"/>
 <link rel="stylesheet" type="text/css" href="elements/style/nav.css"/>
-<link rel="stylesheet" type="text/css" href="elements/style/index.css"/>
+<link rel="stylesheet" type="text/css" href="elements/style/index_2.css"/>
 <link rel="icon" href="elements/pictures/favicon.png">
 </head>
 
@@ -18,8 +18,6 @@
 <nav>
 	<input type="checkbox" id="menu">
 	<label for="menu" class="nav_menu"></label>
-	<label class="nav_logo">PR-Modellbau</label>
-	<img class="nav_img" src="elements/pictures/nav_img.png">
 	<ul class="nav_list">
 		<li><a href="" class="nav_link nav_active disable_link">Home</a></li>
 		<li><a href="produkte.html" class="nav_link disable_link">Produkte</a></li>
@@ -31,22 +29,29 @@
 
 <!--Content-->
 
-<main>
 
-	<h1>Willkommen bei PR-Modellbau</h1>
+<div class="slideshow"><img src="elements/pictures/header/header_1.jpg"><div class="text">Xrot mit Gmf 4/4 am Schneeräumen in Landquart<br>© Tobias Kaufmann</div></div>
+<div class="slideshow"><img src="elements/pictures/header/header_2.jpg"><div class="text">Allegra in Igis<br>© Tobias Kaufmann</div></div>
+<div class="slideshow"><img src="elements/pictures/header/header_3.jfif"><div class="text">3 Ge 4/4<sup>I</sup> in Chur<br>© Christoph Aschwanden</div></div>
 
-	<h2 style="padding-top: 20px;">Das Fachgeschäft mit den exklusiven Modellen aus eigener Produktion, welche auf Ihrer Anlage noch fehlen.</h2>
+<a class="slideshow_prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="slideshow_next" onclick="plusSlides(1)">&#10095;</a>
+
+
+<div class="welcome_screen">
+	<h2>Willkommen bei PR-Modellbau</h2>
+	<p>Das Fachgeschäft mit den exklusiven Modellen aus eigener Produktion, welche auf Ihrer Anlage noch fehlen.</p>
+</div>
+
+<a class="show_pictures" onclick="bigView()">Gesamt Ansicht</a>
+
+
 	
-	<div class="slideshow-container">
-		<div class="slideshow"><img src="elements/pictures/header/header_1.jpg"><div class="text">Xrot mit Gmf 4/4 am Schneeräumen in Landquart<br>© Tobias Kaufmann</div></div>
-		<div class="slideshow"><img src="elements/pictures/header/header_2.jpg"><div class="text">Allegra in Igis<br>© Tobias Kaufmann</div></div>
-		<div class="slideshow"><img src="elements/pictures/header/header_3.jfif"><div class="text">3 Ge 4/4<sup>I</sup> in Chur<br>© Christoph Aschwanden</div></div>
 
-		<a class="slideshow_prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="slideshow_next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
 
-</main>
+
+
+
 
 <!--Scripts-->
 <script language="javascript" type="text/javascript" src="elements/javascript/image_gallery.js"></script>
@@ -66,6 +71,7 @@
 		
 	</div>
 </footer>
+
 
 </body>
 </html>

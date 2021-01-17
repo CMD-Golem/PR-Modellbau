@@ -1,0 +1,156 @@
+body {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 0;
+}
+
+.welcome_container {
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	top: 100px;
+}
+
+.welcome_screen {
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	width: 40vw;
+	margin: 0;
+	top: 40px;
+	text-align: center;
+	left: calc(20vw + 50px);
+    transform: translate(-50%, 0);
+}
+
+.welcome_screen_ {
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	width: 40vw;
+	margin: 0;
+	top: 100px;
+	text-align: center;
+	left: 50%;
+    transform: translate(-50%, 0);
+}
+
+h2 {
+	color: #FFCC00;
+	font-size: 25px;
+}
+
+
+/* Slideshow */
+.slideshow {
+	display: none;
+}
+
+.slideshow img {
+	vertical-align: middle;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
+/* Buttons */
+.slideshow_prev, .slideshow_next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 5px 5px 0;
+	user-select: none;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideshow_next {
+	right: 0;
+	left: unset;
+	border-radius: 5px 0 0 5px;
+}
+
+/* Caption text */
+.slideshow .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 18px;
+	position: absolute;
+	bottom: 8px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.5);
+	right: 8px;
+	/*left: 50%;
+    transform: translate(-50%, 0);*/
+}
+
+.show_pictures {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 18px;
+	position: absolute;
+	bottom: 8px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.5);
+	left: 8px;
+	cursor: pointer;
+	color: #FFCC00;
+	font-weight: bold;
+}
+
+
+/* Changes */
+nav {
+	background-color: unset;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 50px;
+	border-bottom: none;
+}
+
+.nav_list li {
+	margin-top: 15px;
+}
+
+
+footer {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	width: calc(100% - 30%);
+	bottom: 0;
+	color: white;
+}
+
+
+
+/* Big View */
+.big_view .welcome_screen, .big_view nav {
+	display: none;
+}
+
+.big_view .slideshow_prev, .big_view .slideshow_next {
+	background-color: unset;
+}
+
+.slideshow_prev:hover, .slideshow_next:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
