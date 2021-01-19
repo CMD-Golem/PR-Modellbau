@@ -288,7 +288,7 @@ aside {
 }
 
 @media (max-width: 500px) {
-	aside {
+	aside, .filter_search, .list_view_button, .picture_view_button {
 		display: none;
 	}
 }
@@ -309,6 +309,19 @@ aside {
 
 #filter_button:hover {
 	background: #FFAF1F;
+}
+
+.filter_search {
+	font-size: 18px;
+	padding: 11px 15px;
+	margin: 20px;
+	margin-top: 15px; 
+	border-radius: 5px;
+	border: 4px solid #808080;
+}
+
+.filter_search:hover {
+	border: 4px solid #FFCC00;
 }
 
 .filter_open {
