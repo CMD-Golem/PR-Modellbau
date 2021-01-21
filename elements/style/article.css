@@ -360,8 +360,8 @@ aside {
 .filter_list p {
 	margin-left: 25px;
 	font-weight: bold;
-	padding-bottom: 5px;
-	padding-top: 20px; 
+	margin-bottom: 5px;
+	margin-top: 25px; 
 }
 .filter_list label {
 	padding-bottom: 5px;
