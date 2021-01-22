@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /info/bestellen.html
+Disallow: /info/impressum.html
+Disallow: /404.html
