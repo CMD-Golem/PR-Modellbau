@@ -17,9 +17,7 @@
 <!--Navbar-->
 <nav>
 	<input type="checkbox" id="menu">
-	<label for="menu" class="nav_menu"></label>
-	<label class="nav_logo">PR-Modellbau</label>
-	<img class="nav_img" src="elements/pictures/nav_img.png">
+	<label for="menu" class="nav_menu nav_menu_index"></label>
 	<ul class="nav_list">
 		<li><a href="" class="nav_link nav_active disable_link">Home</a></li>
 		<li><a href="produkte.html" class="nav_link disable_link">Produkte</a></li>
@@ -31,41 +29,26 @@
 
 <!--Content-->
 
-<main>
 
-	<h1>Willkommen bei PR-Modellbau</h1>
+<div class="slideshow"><img src="elements/pictures/header/header_1.jpg"><div class="text">Xrot mit Gmf 4/4 am Schneeräumen in Landquart<br>© Tobias Kaufmann (16.01.2021)</div></div>
+<div class="slideshow"><img src="elements/pictures/header/header_2.jpg"><div class="text">Allegra in Igis<br>© Tobias Kaufmann (14.01.2021)</div></div>
+<div class="slideshow"><img src="elements/pictures/header/header_3.jfif"><div class="text">3 Ge 4/4<sup>I</sup> in Chur<br>Christoph Aschwanden (09.06.2009)</div></div>
 
-	<h2 style="padding-top: 20px;">Das Fachgeschäft mit den exklusiven Modellen aus eigener Produktion, welche auf Ihrer Anlage noch fehlen.</h2>
-	
-	<div class="slideshow-container">
-		<div class="slideshow"><img src="elements/pictures/header/header_1.jpg"><div class="text">Xrot mit Gmf 4/4 am Schneeräumen in Landquart<br>© Tobias Kaufmann</div></div>
-		<div class="slideshow"><img src="elements/pictures/header/header_2.jpg"><div class="text">Allegra in Igis<br>© Tobias Kaufmann</div></div>
-		<div class="slideshow"><img src="elements/pictures/header/header_3.jfif"><div class="text">3 Ge 4/4<sup>I</sup> in Chur<br>© Christoph Aschwanden</div></div>
+<a class="slideshow_prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="slideshow_next" onclick="plusSlides(1)">&#10095;</a>
 
-		<a class="slideshow_prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="slideshow_next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
 
-</main>
+<div class="welcome_screen">
+	<h2>Willkommen bei PR-Modellbau</h2>
+	<p>Das Fachgeschäft mit den exklusiven Modellen aus eigener Produktion, welche auf Ihrer Anlage noch fehlen.</p>
+</div>
+
+<a class="show_pictures" onclick="bigView()">Gesamt Ansicht</a>
+
 
 <!--Scripts-->
 <script language="javascript" type="text/javascript" src="elements/javascript/image_gallery.js"></script>
 
-
-<!--Footer-->
-<footer>
-	<div class="footer_text">
-		<div class="footer_address">
-			<p>PR-Modellbau<br>Postfach<br>CH-7235, Fideris<br><a href="tel:+41813305252">Tel: +41 81 330 52 52</a><br><a href="mailto:info@prmodellbau.ch">E-Mail: info@prmodellbau.ch</a></p>
-		</div>
-		<div class="footer_links">
-			<a href="https://goo.gl/maps/QuBZSQh3pp4fdVrd7" target="_blank">Standort</a>
-			<a href="info/impressum.html">Impressum</a>
-		</div>
-		<div class="footer_copyright">© 2018 - <script>document.write(new Date().getFullYear());</script> PR-Modellbau</div>
-		
-	</div>
-</footer>
 
 </body>
 </html>

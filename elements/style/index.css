@@ -1,20 +1,40 @@
-/* Slideshow */
-.slideshow-container {
+body {
+	display: flex;
+	justify-content: center;
 	position: relative;
-	margin: auto;
-	max-width: 800px;
-	margin: 0 auto;
-	padding-top: 50px;
-	padding-bottom: 10px;
+	margin: 0;
 }
 
+.welcome_screen {
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	width: 40vw;
+	margin: 0;
+	top: 40px;
+	text-align: center;
+	left: calc(20vw + 50px);
+	transform: translate(-50%, 0);
+}
+
+h2 {
+	color: #FFCC00;
+	font-size: 25px;
+}
+
+
+/* Slideshow */
 .slideshow {
 	display: none;
 }
 
 .slideshow img {
 	vertical-align: middle;
-	width: 100%;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
 }
 
 /* Buttons */
@@ -47,10 +67,87 @@
 	font-size: 15px;
 	padding: 8px 18px;
 	position: absolute;
-	bottom: 15px;
+	bottom: 8px;
 	text-align: center;
 	border-radius: 5px;
 	background-color: rgba(0,0,0,0.5);
-	left: 50%;
-    transform: translate(-50%, 0);
+	right: 8px;
+	margin-left: 8px;
+}
+
+.show_pictures {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 18px;
+	position: absolute;
+	bottom: 8px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.5);
+	left: 8px;
+	cursor: pointer;
+	color: #FFCC00;
+	font-weight: bold;
+}
+
+
+/* Changes */
+nav {
+	background-color: unset;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 50px;
+	border-bottom: none;
+}
+
+.nav_list li {
+	margin-top: 15px;
+}
+
+.nav_menu_index {
+	background: transparent url('../pictures/menu/menu_index.svg') center/contain no-repeat;
+	margin-right: 80px;
+}
+
+
+/* Big View */
+.big_view .welcome_screen, .big_view nav {
+	display: none;
+}
+
+.big_view .slideshow_prev, .big_view .slideshow_next {
+	background-color: unset;
+}
+
+.slideshow_prev:hover, .slideshow_next:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Transform*/
+@media (max-width: 1350px) {
+	.welcome_screen {
+		width: unset;
+		left: 80px;
+		right: 80px;
+		transform: unset;
+	}
+}
+
+@media (max-width: 800px) {
+	.welcome_screen {
+		width: unset;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		transform: unset;
+		padding-top: 80px;
+	}
+	.nav_menu_index {
+		margin-right: 20px;
+	}
+	.show_pictures {
+		display: none;
+	}
 }

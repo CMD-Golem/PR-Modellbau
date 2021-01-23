@@ -7,15 +7,11 @@ nav {
 }
 
 .nav_logo {
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
 	display: none;
 }
 
 .nav_img {
-	height: 120px;
+	height: 112px;
 	margin-top: 15px;
 }
 
@@ -45,106 +41,78 @@ nav {
 	transition: 0.5s;
 }
 
+/* Menu Button */
 .nav_menu {
-	font-size: 30px;
-	float: right;
-	line-height: 130px;
-	padding: 5px;
-	padding-right: 20px;
 	cursor: pointer;
 	display: none;
-}
-
-.nav_menu::after {
-	content: "\2630";
+	float: right;
+	padding: 0 16px;
+	padding-top: 8px;
+	height: 40px;
+	width: 40px;
+	margin-top: 45px;
+	background: transparent url('../pictures/menu/menu.svg') center/contain no-repeat;
 }
 
 #menu {
 	display: none;
 }
 
-
-
-
+/* Enable Menu */
 @media (max-width: 1350px) {
 	.nav_menu {
 		display: block;
 	}
 
 	.nav_list {
+		display: flex;
 		position: fixed;
 		width: 300px;
 		height: 100vh;
-		background: #2e2d2b;
+		background: #808080;
 		top: 0;
 		right: -100%;
-		text-align: center;
 		transition: all 0.5s;
-		margin-right: 0px;
+		padding-top: 150px;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 0;
 	}
 
 	.nav_list li {
-		display: block;
-		margin: 50px 0;
-		line-height: 80px;
-		color: white;
+		padding: 0 50px;
+		margin: 0;
+		margin-left: 300px; 
+		transition: margin-left 0.5s ease 0.2s;
+		width: 70%;
 	}
 
 	.nav_link {
-		font-size: 20px;
-		background: transparent;
+		margin: 5px 0;
+		border-radius: 20px;
+		display: block;
+		text-align: center;
 	}
 
-	.nav_link:hover, .nav_active {
-		background: none;
-		color: #ffaf1f;
+	.nav_link:hover, .nav_link:focus {
+		background: #FFCC00;
 	}
+
 
 	#menu:checked ~ .nav_list {
 		right: 0;
 	}
 
+	#menu:checked ~ .nav_list li {
+		margin: 0;
+	}
+
 	#menu:checked ~ .nav_menu {
-		line-height: 80px;
-		right: 0;
 		position: fixed;
+		right: 0;
 		z-index: 3;
-		top: 0;
-		color: white;
-	}
-
-	#menu:checked ~ .nav_menu::after {
-		content: "\2573";
-	}
-}
-
-
-@media (max-width: 750px) {
-	nav {
-		height: 80px;
-		position: sticky;
-		top: 0;
-	}
-
-	.nav_logo {
-		padding: 0px 20px;
-		display: block;
-	}
-
-	.nav_img {
-		display: none;
-	}
-
-	.nav_list {
-		top: 80px;
-	}
-
-	.nav_menu {
-		line-height: 80px;
-	}
-
-	#menu:checked ~ .nav_menu {
-		color: #3A3A3A;
+		margin-right: unset;
+		background: transparent url('../pictures/menu/close.svg') center/contain no-repeat;
 	}
 }
 
@@ -152,5 +120,19 @@ nav {
 @media (max-width: 400px) {
 	.nav_list {
 		width: 100%;
+	}
+}
+
+@media (max-width: 671px) {
+	nav {
+		position: relative;
+	}
+
+	.nav_img {
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		width: 80vw;
+		height: auto;
 	}
 }
