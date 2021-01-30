@@ -22,6 +22,7 @@ getjson.onreadystatechange = function() {
 
 		article.innerHTML = html;
 		siteSearch();
+		loadFilter();
 	}
 };
 getjson.open("GET", json_url, true);
@@ -57,6 +58,20 @@ function siteSearch() {
 }
 
 
+//#################################################################################################
+// Add filter
+var hashfilter = window.location.hash.substr(1);
+
+if (document.getElementById(hashfilter) == null) {
+	console.log("Filter in Hash isn't a real Filter!");
+}
+else {
+	document.getElementById(hashfilter).checked = true;
+	console.log("hashfilter");
+}
+
+
+
 
 //#################################################################################################
 // Filter //https://stackoverflow.com/a/45146800
@@ -77,8 +92,8 @@ $("#filters :checkbox").click(function() {
 
 
 // Filter if return to page
-$(window).on('load', function(){
-	var getFilter = function(category) {
+function loadFilter() {
+	var getFilter = function (category) {
 		var filter = $("#filters ." + category + ":checked").map(function() {
 			return '[class*="' + this.id + '"]';
 		}).get().join(",");
@@ -86,13 +101,11 @@ $(window).on('load', function(){
 		return filter;
 	}
 
-	$("#filters :checkbox").click(function() {
-		var all = $("article");
-		var tgts = all.filter(getFilter("filter01")).filter(getFilter("filter02")).filter(getFilter("filter03")).filter(getFilter("filter04")).filter(getFilter("filter05"));
-		all.not(tgts).addClass("hide_filter");
-		tgts.removeClass("hide_filter");
-	});
-});
+	var all = $("article");
+	var tgts = all.filter(getFilter("filter01")).filter(getFilter("filter02")).filter(getFilter("filter03")).filter(getFilter("filter04")).filter(getFilter("filter05"));
+	all.not(tgts).addClass("hide_filter");
+	tgts.removeClass("hide_filter");
+};
 
 
 
