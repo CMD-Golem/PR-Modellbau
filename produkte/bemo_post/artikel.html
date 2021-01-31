@@ -2,8 +2,8 @@
 <html lang="de">
 	
 <head>
-<title>PR-Modellbau - Strassenfahrzeuge</title>
-<meta name="description" content="Fülle deine Strassen mit Farben.">
+<title>PR-Modellbau - Bemo Post</title>
+<meta name="description" content="Eine grosse Auswahl von Bemo Post.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../../elements/style/style.css"/>
@@ -35,7 +35,7 @@
 
 
 <!--Filter-->
-<aside>
+<aside style="display: none;">
 	<div id="filter_button" onclick="filterList()">Filter</div>
 	<div id="filter_close" onclick="filterList()"></div>
 	<div class="filter_list" id="filters">
@@ -59,7 +59,7 @@
 <!--Content-->
 <main>
 	<div class="search_container">
-		<div class="filter_search" onclick="filterList()">Filter</div>
+		<div class="filter_search" onclick="filterList()" style="display: none;">Filter</div>
 		<div class="input_container">
 			<input type="text" placeholder="Suchen" id="site_search" onkeyup="siteSearch()">
 		</div>
@@ -85,7 +85,7 @@
 
 <!--Scripts-->
 <script type="text/javascript">
-	var json_url = "https://raw.githubusercontent.com/CMD-Golem/prmodellbau/master/elements/json/strassenfahrzeuge.json"
+	var json_url = "https://raw.githubusercontent.com/CMD-Golem/prmodellbau/master/elements/json/bemo_post.json"
 </script>
 <script language="javascript" type="text/javascript" src="../../elements/javascript/article.js"></script>
 <script language="javascript" type="text/javascript" src="../../elements/javascript/images.js"></script>
