@@ -272,6 +272,11 @@ article:hover {
 	width: 40vw;
 }
 
+#img {
+	max-height: calc(100vh - 200px);
+	max-width: 100%;
+}
+
 @media (max-width: 1500px) {
 	.bigImg_container {
 		width: 60vw;
