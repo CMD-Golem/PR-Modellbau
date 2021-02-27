@@ -3,5 +3,10 @@
 {"art_nr":"PRFW-2.001", "description":"Vieh- und Heustall mit gemauerten Eckteilen, Blechdach, 8 x 7 x 9 cm", "price":" 125.00 ", "producer":"PR-Modellbau","scale":"H0m","keywords":"H0m Ställe Heustahl Viehstahl Stahl Blechdach Holzhaus", "picture":"../../elements/pictures/products/anlagenbau/prmodellbau/prfw-2001.jpg"},
 {"art_nr":"PRFW-3.001", "description":"Vieh- und Heustall Holz, Steindach, 8 x 7 x 10 cm", "price":" 137.50 ", "producer":"PR-Modellbau","scale":"H0m","keywords":"H0m Ställe Heustahl Stahl Steindach Holzhaus", "picture":"../../elements/pictures/products/anlagenbau/prmodellbau/prfw-3001.jpg"},
 {"art_nr":"PRFW-4.001", "description":"Heustall Holz, Ziegeldach, 8 x 6 x 11 cm", "price":" 137.50 ", "producer":"PR-Modellbau","scale":"H0m","keywords":"H0m Ställe Heustahl Stahl Ziegeldach Holzhaus", "picture":"../../elements/pictures/products/anlagenbau/prmodellbau/prfw-4001.jpg"},
-{"art_nr":"PRFW-5.001", "description":"Vieh- und Heustall Holz, Seiteneingang, Steindach, 12 x 8 x 10 cm", "price":" 187.50 ", "producer":"PR-Modellbau","scale":"H0m","keywords":"H0m Ställe Heustahl Viehstahl Stahl Steindach Holzhaus", "picture":"../../elements/pictures/products/anlagenbau/prmodellbau/prfw-5001.jpg"}
+{"art_nr":"PRFW-5.001", "description":"Vieh- und Heustall Holz, Seiteneingang, Steindach, 12 x 8 x 10 cm", "price":" 187.50 ", "producer":"PR-Modellbau","scale":"H0m","keywords":"H0m Ställe Heustahl Viehstahl Stahl Steindach Holzhaus", "picture":"../../elements/pictures/products/anlagenbau/prmodellbau/prfw-5001.jpg"},
+
+{"art_nr":"PL-1000", "description":"Weichenmotor", "price":" 23.80 ", "producer":"Peco","scale":"H0m","keywords":" Weiche Motor", "picture":"../../elements/pictures/products/anlagenbau/peco/pl-1000.png"},
+{"art_nr":"PL-1001", "description":"Weichenmotor mit Doppel-Microschalter", "price":" 33.20 ", "producer":"Peco","scale":"H0m","keywords":" Weiche Motor Microschalter", "picture":"../../elements/pictures/products/anlagenbau/peco/pl-1001.png"},
+{"art_nr":"PL-1005", "description":"Doppel-Microschalter", "price":" 14.00 ", "producer":"Peco","scale":"H0m","keywords":" Weiche Microschalter", "picture":"../../elements/pictures/products/anlagenbau/peco/pl-1005.png"}
+
 ]
