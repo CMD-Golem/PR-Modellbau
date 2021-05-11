@@ -7,10 +7,12 @@
 .content_link {
 	padding: 2%;
 	flex-basis: 290px;
+	margin: 10px 0;
 }
 
 .content_link_small {
 	padding: 2%;
+	margin: 10px 0;
 }
 
 
